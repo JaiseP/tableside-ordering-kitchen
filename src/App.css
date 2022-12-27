@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    height: 100%;
+  }
+  
+  body {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  #root, .App {
+    height: 100%;
+  }
+
+
+  .mt-1 {
+    margin-top: 1rem;
+  }

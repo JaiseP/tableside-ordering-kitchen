@@ -1,0 +1,144 @@
+.main-container {
+    background-color: #f2f2f2;
+    height: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+}
+
+.search-box {
+    width: 50%;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 0.6rem 0.8rem;
+    border-radius: 5px;
+    border: 0.2px solid #949494;
+    font-family: 'Poppins', sans-serif;
+}
+
+.user-container {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.user-container p {
+    font-weight: 500;
+}
+
+.orders-container {
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+.btn-container {
+    display: flex;
+    padding: 0 0.5rem;
+    margin-top: 1.1rem;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cancel-btn {
+    background-color: #ffd6d6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    width: 20%;
+    padding: 0.2rem 0;
+}
+
+.confirm-btn {
+    width: 80%;
+}
+
+.confirm-btn .btn {
+    padding: 0.4rem;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+.blink {
+    animation: blink-animation 0.5s infinite;
+    -webkit-animation: blink-animation 1s  infinite;
+  }
+  @keyframes blink-animation {
+    to {
+      opacity: 0;
+    }
+  }
+  @-webkit-keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+
+
+
+
+
+.my-masonry-grid {
+    display: -webkit-box; /* Not needed if autoprefixing */
+    display: -ms-flexbox; /* Not needed if autoprefixing */
+    display: flex;
+    margin-left: -30px; /* gutter size offset */
+    width: auto;
+  }
+  .my-masonry-grid_column {
+    padding-left: 30px; /* gutter size */
+    background-clip: padding-box;
+  }
+  
+  /* Style your items */
+  .my-masonry-grid_column > .order { /* change div to reference your elements you put in <Masonry> */
+    border-radius: 5px;
+    padding-bottom: 0.5rem;
+    background-color: #fff;
+    margin-bottom: 2rem;
+  }
+
+  .my-masonry-grid_column .order-head {
+    display: flex;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    justify-content: space-between;
+  }
+
+  .my-masonry-grid_column .order-head .tableNo {
+    border-radius: 5px;
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    padding: 0.5rem;
+    color: #fff;
+}
+
+.my-masonry-grid_column .order-head .right {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    padding-right: 1rem;
+}
+
+.my-masonry-grid_column .item-list {
+    margin-top: 1rem;
+}
+
+.my-masonry-grid_column .item-list .item-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+}
